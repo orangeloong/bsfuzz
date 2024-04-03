@@ -1,0 +1,123 @@
+(qsym) chen@ubuntu:~/qsym$ pip install .
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+Processing /home/chen/qsym
+Requirement already satisfied: termcolor in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from qsym==0.1) (1.1.0)
+Requirement already satisfied: pyinotify in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from qsym==0.1) (0.9.6)
+Requirement already satisfied: pytest-xdist in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from qsym==0.1) (1.34.0)
+Requirement already satisfied: six in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest-xdist->qsym==0.1) (1.16.0)
+Requirement already satisfied: pytest>=4.4.0 in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest-xdist->qsym==0.1) (4.6.11)
+Requirement already satisfied: pytest-forked in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest-xdist->qsym==0.1) (1.3.0)
+Requirement already satisfied: execnet>=1.1 in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest-xdist->qsym==0.1) (1.9.0)
+Requirement already satisfied: atomicwrites>=1.0 in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (1.4.1)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (0.13.1)
+Requirement already satisfied: packaging in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (20.9)
+Requirement already satisfied: more-itertools<6.0.0,>=4.0.0; python_version <= "2.7" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (5.0.0)
+Requirement already satisfied: py>=1.5.0 in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (1.11.0)
+Requirement already satisfied: attrs>=17.4.0 in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (21.4.0)
+Requirement already satisfied: wcwidth in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (0.2.5)
+Requirement already satisfied: funcsigs>=1.0; python_version < "3.0" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (1.0.2)
+Requirement already satisfied: pathlib2>=2.2.0; python_version < "3.6" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (2.3.7.post1)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pytest>=4.4.0->pytest-xdist->qsym==0.1) (2.1.3)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from packaging->pytest>=4.4.0->pytest-xdist->qsym==0.1) (2.4.7)
+Requirement already satisfied: backports.functools-lru-cache>=1.2.1; python_version < "3.2" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from wcwidth->pytest>=4.4.0->pytest-xdist->qsym==0.1) (1.6.4)
+Requirement already satisfied: typing; python_version < "3.5" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pathlib2>=2.2.0; python_version < "3.6"->pytest>=4.4.0->pytest-xdist->qsym==0.1) (3.10.0.0)
+Requirement already satisfied: scandir; python_version < "3.5" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from pathlib2>=2.2.0; python_version < "3.6"->pytest>=4.4.0->pytest-xdist->qsym==0.1) (1.10.0)
+Requirement already satisfied: contextlib2; python_version < "3" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest>=4.4.0->pytest-xdist->qsym==0.1) (0.6.0.post1)
+Requirement already satisfied: zipp>=0.5 in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest>=4.4.0->pytest-xdist->qsym==0.1) (1.2.0)
+Requirement already satisfied: configparser>=3.5; python_version < "3" in /home/chen/.virtualenvs/qsym/lib/python2.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest>=4.4.0->pytest-xdist->qsym==0.1) (4.0.2)
+Building wheels for collected packages: qsym
+  Building wheel for qsym (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /home/chen/.virtualenvs/qsym/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-req-build-Ekrenq/setup.py'"'"'; __file__='"'"'/tmp/pip-req-build-Ekrenq/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-LP9TZ6
+       cwd: /tmp/pip-req-build-Ekrenq/
+  Complete output (38 lines):
+  running bdist_wheel
+  running build
+  Building pintool
+  make: Entering directory '/tmp/pip-req-build-Ekrenq/qsym/pintool'
+  mkdir -p obj-intel64/
+  g++ -DBIGARRAY_MULTIPLIER=1 -Wall -Werror -Wno-unknown-pragmas -fno-stack-protector -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX  -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/source/include/pin -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/source/include/pin/gen -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/extras/components/include -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/extras/xed-intel64/include -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/source/tools/InstLib -O3 -fomit-frame-pointer -fno-strict-aliasing  -fabi-version=2 -D_GLIBCXX_USE_CXX11_ABI=0 -I/tmp/pip-req-build-Ekrenq/qsym/pintool -g -Wno-error=unused-function -std=c++11 -DCONFIG_CONTEXT_SENSITIVE -I/usr/local/qsym/include  -c -o obj-intel64/afl_trace_map.o afl_trace_map.cpp
+  In file included from afl_trace_map.h:12:0,
+                   from afl_trace_map.cpp:1:
+  common.h:8:29: fatal error: llvm/ADT/APSInt.h: No such file or directory
+  compilation terminated.
+  /tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/source/tools/Config/makefile.default.rules:170: recipe for target 'obj-intel64/afl_trace_map.o' failed
+  make: *** [obj-intel64/afl_trace_map.o] Error 1
+  make: Leaving directory '/tmp/pip-req-build-Ekrenq/qsym/pintool'
+  Traceback (most recent call last):
+    File "<string>", line 1, in <module>
+    File "/tmp/pip-req-build-Ekrenq/setup.py", line 54, in <module>
+      data_files=data_files
+    File "/usr/lib/python2.7/distutils/core.py", line 151, in setup
+      dist.run_commands()
+    File "/usr/lib/python2.7/distutils/dist.py", line 953, in run_commands
+      self.run_command(cmd)
+    File "/usr/lib/python2.7/distutils/dist.py", line 972, in run_command
+      cmd_obj.run()
+    File "/home/chen/.virtualenvs/qsym/local/lib/python2.7/site-packages/wheel/bdist_wheel.py", line 299, in run
+      self.run_command('build')
+    File "/usr/lib/python2.7/distutils/cmd.py", line 326, in run_command
+      self.distribution.run_command(command)
+    File "/usr/lib/python2.7/distutils/dist.py", line 972, in run_command
+      cmd_obj.run()
+    File "/tmp/pip-req-build-Ekrenq/setup.py", line 29, in run
+      self.execute(build_pintool, (), msg='Building pintool')
+    File "/usr/lib/python2.7/distutils/cmd.py", line 349, in execute
+      util.execute(func, args, msg, dry_run=self.dry_run)
+    File "/usr/lib/python2.7/distutils/util.py", line 309, in execute
+      func(*args)
+    File "/tmp/pip-req-build-Ekrenq/setup.py", line 18, in build_pintool
+      raise ValueError("Unable to build pintool")
+  ValueError: Unable to build pintool
+  ----------------------------------------
+  ERROR: Failed building wheel for qsym
+  Running setup.py clean for qsym
+Failed to build qsym
+Installing collected packages: qsym
+    Running setup.py install for qsym ... error
+    ERROR: Command errored out with exit status 1:
+     command: /home/chen/.virtualenvs/qsym/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-req-build-Ekrenq/setup.py'"'"'; __file__='"'"'/tmp/pip-req-build-Ekrenq/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-PmBnfm/install-record.txt --single-version-externally-managed --compile --install-headers /home/chen/.virtualenvs/qsym/include/site/python2.7/qsym
+         cwd: /tmp/pip-req-build-Ekrenq/
+    Complete output (39 lines):
+    running install
+    running build
+    Building pintool
+    make: Entering directory '/tmp/pip-req-build-Ekrenq/qsym/pintool'
+    g++ -DBIGARRAY_MULTIPLIER=1 -Wall -Werror -Wno-unknown-pragmas -fno-stack-protector -DTARGET_IA32E -DHOST_IA32E -fPIC -DTARGET_LINUX  -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/source/include/pin -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/source/include/pin/gen -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/extras/components/include -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/extras/xed-intel64/include -I/tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/source/tools/InstLib -O3 -fomit-frame-pointer -fno-strict-aliasing  -fabi-version=2 -D_GLIBCXX_USE_CXX11_ABI=0 -I/tmp/pip-req-build-Ekrenq/qsym/pintool -g -Wno-error=unused-function -std=c++11 -DCONFIG_CONTEXT_SENSITIVE -I/usr/local/qsym/include  -c -o obj-intel64/afl_trace_map.o afl_trace_map.cpp
+    In file included from afl_trace_map.h:12:0,
+                     from afl_trace_map.cpp:1:
+    common.h:8:29: fatal error: llvm/ADT/APSInt.h: No such file or directory
+    compilation terminated.
+    /tmp/pip-req-build-Ekrenq/third_party/pin-2.14-71313-gcc.4.4.7-linux/source/tools/Config/makefile.default.rules:170: recipe for target 'obj-intel64/afl_trace_map.o' failed
+    make: *** [obj-intel64/afl_trace_map.o] Error 1
+    make: Leaving directory '/tmp/pip-req-build-Ekrenq/qsym/pintool'
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-req-build-Ekrenq/setup.py", line 54, in <module>
+        data_files=data_files
+      File "/usr/lib/python2.7/distutils/core.py", line 151, in setup
+        dist.run_commands()
+      File "/usr/lib/python2.7/distutils/dist.py", line 953, in run_commands
+        self.run_command(cmd)
+      File "/usr/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/home/chen/.virtualenvs/qsym/local/lib/python2.7/site-packages/setuptools/command/install.py", line 61, in run
+        return orig.install.run(self)
+      File "/usr/lib/python2.7/distutils/command/install.py", line 601, in run
+        self.run_command('build')
+      File "/usr/lib/python2.7/distutils/cmd.py", line 326, in run_command
+        self.distribution.run_command(command)
+      File "/usr/lib/python2.7/distutils/dist.py", line 972, in run_command
+        cmd_obj.run()
+      File "/tmp/pip-req-build-Ekrenq/setup.py", line 29, in run
+        self.execute(build_pintool, (), msg='Building pintool')
+      File "/usr/lib/python2.7/distutils/cmd.py", line 349, in execute
+        util.execute(func, args, msg, dry_run=self.dry_run)
+      File "/usr/lib/python2.7/distutils/util.py", line 309, in execute
+        func(*args)
+      File "/tmp/pip-req-build-Ekrenq/setup.py", line 18, in build_pintool
+        raise ValueError("Unable to build pintool")
+    ValueError: Unable to build pintool
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /home/chen/.virtualenvs/qsym/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-req-build-Ekrenq/setup.py'"'"'; __file__='"'"'/tmp/pip-req-build-Ekrenq/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-PmBnfm/install-record.txt --single-version-externally-managed --compile --install-headers /home/chen/.virtualenvs/qsym/include/site/python2.7/qsym Check the logs for full command output.
+
